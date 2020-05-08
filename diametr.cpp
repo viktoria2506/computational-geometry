@@ -71,7 +71,6 @@ int main () {
     long long diam = 0;
     for (int i = 0, j = 1; i < ans.size(); i++) {
         while ((j < ans.size() - 1)  && (distance(ans[i],ans[j]) <= distance(ans[i],ans[j+1])) ){
-            //diam = max(diam, distance(ans[i], ans[j]));
             j++;
         }
         diam = max(diam, distance(ans[i], ans[j]));
